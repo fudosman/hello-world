@@ -1,0 +1,376 @@
+:root {
+    --green-header: #009048;
+    --light-green: #199c5a;
+    --white: #ffffff;
+    --button-green: #048545;
+    --button-orang: #e0b34e;
+    --grey: #737373;
+    --dark-grey: #535353;
+    --black: #000000;
+    --contact-green: #068945;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.grid {
+    margin: 0;
+    padding: 0 15rem 0 15rem;
+    background-color: var(--green-header);
+}
+
+
+/* navigation bar */
+
+@media(max-width: 815px) {
+    #nav {
+        flex-direction: column;
+    }
+}
+
+#nav {
+    display: flex;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    justify-content: space-between;
+}
+
+#nav label {
+    font-weight: bold;
+    color: var(--white);
+    margin: auto 0;
+}
+
+#nav-left {
+    display: flex;
+    vertical-align: center;
+}
+
+#nav-left ul {
+    margin: auto 0;
+    list-style-type: none;
+    display: flex;
+}
+
+#nav-left ul li a {
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+}
+
+#nav-left ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-left ul li a:hover {
+    background-color: var(--button-green);
+    /* margin-bottom: -4rem; */
+}
+
+#nav-left ul em {
+    color: #475455;
+}
+
+#nav-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    margin: auto 0;
+}
+
+#nav-right img {
+    height: 1rem;
+    vertical-align: center;
+    background-color: var(--white);
+}
+
+
+/* MENU */
+
+@media( max-width: 1070px) {
+    .menu-form {
+        display: none;
+    }
+}
+
+@media(max-width: 815px) {
+    .grid {
+        margin: 0;
+        padding: 0;
+    }
+    .menu-list {
+        font-size: 85%;
+        text-align: center;
+    }
+    #menu {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+#menu {
+    display: flex;
+    background-color: var(--white);
+    justify-content: space-between;
+    font-size: 1rem;
+    line-height: 3rem;
+}
+
+#menu button {
+    background-color: var(--button-orang);
+    color: var(--white);
+}
+
+.menu-left {
+    margin: auto 0;
+}
+
+.menu-right {
+    display: flex;
+}
+
+.menu-right ul {
+    list-style: none;
+    display: flex;
+    margin: auto 0;
+}
+
+.menu-right ul li {
+    display: block;
+    margin-right: .2rem;
+}
+
+.menu-right a {
+    text-decoration: none;
+    color: var(--black);
+    text-align: center;
+}
+
+.menu-right a:hover {
+    color: blue;
+}
+
+.menu-right form {
+    display: flex;
+    margin: auto 0;
+}
+
+.menu-list {
+    margin: auto 0;
+}
+
+.menu-form {
+    margin: auto 0;
+}
+
+
+/* showcase */
+
+#showcase {
+    height: 80%;
+    background-image: url(./images/optimized_images/daniel-burka-oR9ZisoF_NE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: stretch;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 30vh 0 35vh 0;
+}
+
+#learn a {
+    border: var(--white) solid .1rem;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+}
+
+#learn a:hover {
+    border: var(--white) solid .1rem;
+    color: var(--black);
+    background-color: var(--button-orang);
+}
+
+#allah {
+    color: var(--button-green);
+}
+
+#themselves {
+    color: var(--button-orang);
+}
+
+#showcase-text {}
+
+
+/* contact */
+
+@media(max-width: 815px) {
+    #contact {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+#contact {
+    display: flex;
+    background-color: #f6f6f6;
+    margin: 0;
+}
+
+#islam-community {
+    text-transform: uppercase;
+    color: var(--contact-green);
+    margin-top: 2.5rem;
+}
+
+#alahaji {
+    color: var(--contact-green);
+}
+
+.left-contact {
+    flex: 5;
+}
+
+.right-contact {
+    padding: 1rem 0;
+    background-image: url(./images/optimized_images/fahrul-azmi-r4qheYoY8Qg-unsplash.jpg);
+    width: background-repeat: no-repeat;
+    flex: 3;
+    color: var(--white);
+    text-align: center;
+    line-height: 1rem;
+    background-color: var(--contact-green);
+}
+
+.right-contact a {
+    text-decoration: none;
+    color: var(--black);
+    background-color: var(--white);
+    padding: .2rem 1rem;
+    border-radius: .3rem;
+    margin-top: 8rem;
+}
+
+.right-contact a:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+/* mission */
+
+@media(max-width: 815px) {
+    #mission {
+        flex-direction: column;
+        text-align: center;
+    }
+    #mission-vission {
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+#mission {
+    display: flex;
+    background-color: var(--white);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-content: space-between;
+}
+
+#mission-image {}
+
+.merciful {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.left-mission {
+    flex: 1;
+    margin: auto 0;
+}
+
+.right-mission {
+    flex: 1;
+}
+
+#mission-vission {
+    display: flex;
+}
+
+
+/* prayer boxes */
+
+#prayer-boxes {
+    height: 48%;
+    background-image: url(./images/optimized_images/alfaz-sayed-0aWYvZyCU7c-unsplash.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+#prayer-boxes h1 {
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--button-green);
+    border-radius: .3rem;
+    padding: .5rem 1rem;
+}
+
+.box {
+    background-color: transparent;
+    opacity: .9;
+    margin-bottom: -1rem;
+    padding-bottom: 1rem;
+}
+
+.box p {
+    color: var(--white);
+}
+
+.prayers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: .1rem;
+    background-color: transparent;
+    margin: auto 0;
+}
+
+@media(max-width:815px) {
+    .box a {
+        padding: .5rem .5rem;
+    }
+}
+
+
+/* help */
+
+#help-us {
+    text-align: center;
+    background-color: var(--white);
+}
+
+#help-us h3 {
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
